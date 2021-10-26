@@ -1,33 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Product from "./Product";
 
 function App() {
     return (
-        <div className="ml-96">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Example Component</div>
-                        <button className="focus:ring" disabled="disabled">
-                            Disabled
-                        </button>
-                        <div className="card-body font-mono text-base text-justify">
-                            I'm an example component! Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Dicta ab modi facere
-                            placeat consequuntur temporibus est assumenda, autem
-                            molestias similique, voluptas illo voluptatum
-                            consequatur facilis ratione dolorem dignissimos
-                            fugit ipsa? Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Corporis quae voluptatibus ut ad
-                            praesentium. Esse facilis aliquid ut, aliquam
-                            quibusdam labore eius doloremque optio odio repellat
-                            impedit, culpa, magnam corrupti.
-                        </div>
-                        1<p className="ordinal">st</p>
-                    </div>
+        <>
+            <div className="container font-mono text-sm mt-2 ml-2">
+                <div className="flex flex-row space-x-2 text-white">
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
