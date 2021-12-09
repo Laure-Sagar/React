@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Product from "./Product";
+import Nav from "./layouts/Nav";
 
 function App() {
     return (
         <>
+            <Nav />
             <div className="container font-mono text-sm mt-2 ml-2">
                 <div className="flex flex-row space-x-2 text-white">
                     <Product />
